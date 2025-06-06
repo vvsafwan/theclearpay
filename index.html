@@ -28,6 +28,19 @@
     <link rel="stylesheet" href="assets/css/aos.css" />
   </head>
 
+  <style>
+    /* @media screen and (max-width: 991px) {
+      .picture-card {
+       width: 300px;
+    }
+    } */
+
+    .picture-card {
+      object-fit: contain;
+      width: 100%;
+    }
+  </style>
+
   <!-- <style>
   body {
     padding-top: 100px; /* adjust as needed */
@@ -229,12 +242,14 @@
               <div
                 class="position-relative d-flex flex-lg-row flex-column h-100"
               >
+              <div class="col-12 col-md-6" data-aos="zoom-in-up">
+                <img
+                class="picture-card"
+                src="assets/images/rm.png"
+                alt="credit_cards"
+              />
+              </div>
                 <figure class="position-absolute" data-aos="zoom-in-up">
-                  <img
-                    class="w-100"
-                    src="assets/images/homepage-card.png"
-                    alt="credit_cards"
-                  />
                 </figure>
                 <div
                   class="d-flex flex-lg-column align-items-end w-100"
