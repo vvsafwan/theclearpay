@@ -35,6 +35,48 @@
     }
     } */
 
+    body {
+      background: #111;
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+
+    .slider-wrapper {
+      overflow: hidden;
+      position: relative;
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    .slider-track {
+      display: flex;
+      width: calc(200%); /* Double for seamless looping */
+      animation: scroll 20s linear infinite;
+    }
+
+    .slider-track .col {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slider-track img {
+      height: 60px;
+      margin: 0 20px;
+      vertical-align: middle;
+      object-fit: contain;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+
     .picture-card {
       object-fit: contain;
       width: 100%;
@@ -275,6 +317,32 @@
               </div>
             </div>
           </div>
+
+          <div>
+            <h3 class="text-white text-center mt-5">Trusted Partners</h3>
+          </div>
+
+          <div class="slider-wrapper mt-5">
+            <div class="slider-track">
+              <!-- 5 logos repeated twice for seamless scroll -->
+              <!-- First set -->
+              <div class="col"><img src="./assets/images/logos/IDFC.svg" alt="Logo1" /></div>
+              <div class="col"><img src="./assets/images/logos/bharat.png" alt="Logo2" /></div>
+              <div class="col"><img src="./assets/images/logos/dbs.svg" alt="Logo3" /></div>
+              <div class="col"><img src="./assets/images/logos/github.png" alt="Logo4" /></div>
+              <div class="col"><img src="./assets/images/logos/serveu.png" alt="Logo5" /></div>
+              <div class="col"><img src="./assets/images/logos/upi.png" alt="Logo6" /></div>
+
+              <!-- Second set (duplicate) -->
+              <div class="col"><img src="./assets/images/logos/IDFC.svg" alt="Logo1" /></div>
+              <div class="col"><img src="./assets/images/logos/bharat.png" alt="Logo2" /></div>
+              <div class="col"><img src="./assets/images/logos/dbs.svg" alt="Logo3" /></div>
+              <div class="col"><img src="./assets/images/logos/github.png" alt="Logo4" /></div>
+              <div class="col"><img src="./assets/images/logos/serveu.png" alt="Logo5" /></div>
+              <div class="col"><img src="./assets/images/logos/upi.png" alt="Logo6" /></div>
+            </div>
+          </div>
+
         </div>
       </section>
       <!-- ======== End of 1.2. Hero section ========  -->
@@ -1216,7 +1284,7 @@
             <div
               class="container"
             >
-              <h5>Products</h5>
+              <h5 style="text-decoration: underline;">Products</h5>
               <!-- <ul>
                 <li>
                   <a href="#">120 Genève NR21, West Lancashire, England</a>
@@ -1256,7 +1324,7 @@
              <div
               class="container"
             >
-              <h5>Company</h5>
+              <h5 style="text-decoration: underline;">Company</h5>
               <!-- <ul>
                 <li>
                   <a href="#">120 Genève NR21, West Lancashire, England</a>
@@ -1293,7 +1361,7 @@
              <div
               class="container"
             >
-              <h5>Support</h5>
+              <h5 style="text-decoration: underline;">Support</h5>
               <!-- <ul>
                 <li>
                   <a href="#">120 Genève NR21, West Lancashire, England</a>
