@@ -2738,7 +2738,7 @@ footer .ms-0 ul {
   }
 
   .footer-link:hover {
-    text-decoration: underline;
+    color: #bd983b;
     font-size: 1.1rem; /* You can adjust this size */
 	cursor: pointer;
   }
